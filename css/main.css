@@ -108,9 +108,32 @@ body {
   height: 100%;
 }
 
+main {
+    background-color: #ccc;
+    height: 250px;
+    width: 100%;
+  }
+  
+header,
+footer {
+  height: 80px;
+  width: 100%;
+  background: darkslateblue;
+}
+
+header,
+footer,
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   font-weight: 700;
 }
 
@@ -131,6 +154,11 @@ body {
     border-left: 2px solid darkslategrey;
 }
 
+.flex-items{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
